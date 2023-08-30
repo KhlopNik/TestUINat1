@@ -1,5 +1,6 @@
 package com.stepup;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -14,6 +15,7 @@ public class SelenidePageOrder {
     By errorMessage = By.cssSelector(".message_error");
     public SelenidePageOrder(){
     }
+    @Step("Шаг номер 1")
     public void scrollToElement(By by){
         $(by).scrollTo();
     }
